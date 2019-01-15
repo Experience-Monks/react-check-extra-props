@@ -1,0 +1,32 @@
+{
+  "name": "react-check-extra-props",
+  "version": "1.0.0",
+  "description": "React runtime library to detect extra properties passed to components",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jam3/react-check-extra-props.git"
+  },
+  "keywords": [
+    "react",
+    "check",
+    "extra",
+    "properties",
+    "properties"
+  ],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/Jam3/react-check-extra-props/issues"
+  },
+  "homepage": "https://github.com/Jam3/react-check-extra-props#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": ["src/*.{js}"]
+  }
+}
