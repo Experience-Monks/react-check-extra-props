@@ -1,5 +1,5 @@
 {
-  "name": "react-check-extra-props",
+  "name": "@jam3/react-check-extra-props",
   "version": "1.0.0",
   "description": "React runtime library to detect extra properties passed to components",
   "main": "src/index.js",
@@ -27,6 +27,8 @@
   },
   "jest": {
     "collectCoverage": true,
-    "collectCoverageFrom": ["src/*.{js}"]
+    "collectCoverageFrom": [
+      "src/*.{js}"
+    ]
   }
 }
