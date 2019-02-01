@@ -9,13 +9,13 @@ This library will alert you about the properties we are passing to the component
 ## Installation
 
 ```
-npm install react-check-extra-props
+npm install @jam3/react-check-extra-props
 ```
 
 ## Importing
 
 ```
-import checkProps from '../../util/react-check-extra-props';
+import checkProps from '@jam3/react-check-extra-props';
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ Wrap your propTypes object with the checking function and it will flag in the co
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import checkProps from '../../util/react-check-extra-props';
+import checkProps from '@jam3/react-check-extra-props';
 
 class ExampleComponent extends React.Component {
   render() {
