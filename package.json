@@ -1,6 +1,6 @@
 {
   "name": "@jam3/react-check-extra-props",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React runtime library to detect extra properties passed to components",
   "main": "src/index.js",
   "scripts": {
