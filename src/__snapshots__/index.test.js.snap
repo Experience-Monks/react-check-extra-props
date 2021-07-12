@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withCheckExtraProps should complain about missing displayName 1`] = `
+<div>
+  <div>
+    Mock
+  </div>
+</div>
+`;
+
+exports[`withCheckExtraProps should ignore some props 1`] = `
+<div>
+  <div>
+    Mock 
+    test
+  </div>
+</div>
+`;
+
+exports[`withCheckExtraProps should ignore user-defined props 1`] = `
+<div>
+  <div>
+    Mock 
+    test
+  </div>
+</div>
+`;
+
+exports[`withCheckExtraProps should work with class components 1`] = `
+<div>
+  <div>
+    Mock 
+    test
+  </div>
+</div>
+`;
+
+exports[`withCheckExtraProps should work with forwardRef components 1`] = `
+<div>
+  <div>
+    Mock 
+    test
+  </div>
+</div>
+`;
+
+exports[`withCheckExtraProps should work with functional components 1`] = `
+<div>
+  <div>
+    Mock 
+    test
+  </div>
+</div>
+`;

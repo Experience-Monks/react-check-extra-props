@@ -15,7 +15,7 @@ npm install @jam3/react-check-extra-props
 ## Importing
 
 ```
-import checkProps from '@jam3/react-check-extra-props';
+import withCheckExtraProps from '@jam3/react-check-extra-props';
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ Wrap your propTypes object with the checking function and it will flag in the co
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import checkProps from '@jam3/react-check-extra-props';
+import withCheckExtraProps from '@jam3/react-check-extra-props';
 
 class ExampleComponent extends React.Component {
   render() {
@@ -34,35 +34,27 @@ class ExampleComponent extends React.Component {
   }
 }
 
-ExampleComponent.propTypes = checkProps({
+ExampleComponent.propTypes = {
   type: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string,
   className: PropTypes.string,
   isOpen: PropTypes.bool
-});
+};
 
 ExampleComponent.defaultProps = {
   isOpen: false
 };
 
-export default ExampleComponent;
+export default withCheckExtraProps(ExampleComponent);
 ```
 
 ### Ignoring
 
-In case you don't want to define in propTypes all the properties and you don't want the library to flag them as extra properties you can ignore them. To ignore them, send a second argument to the function. This argument is an array with property names.
+In case you don't want to define in propTypes all the properties and you don't want the library to flag them as extra properties you can ignore them. To ignore them, add as second argument an array containing the props you would like to ignore.
 
 ```
 ...
-const propsToIgnore = ['ref', 'data', 'ql'];
-
-ExampleComponent.propTypes = checkProps({
-  type: PropTypes.string,
-  title: PropTypes.string,
-  description: PropTypes.string,
-  className: PropTypes.string,
-  isOpen: PropTypes.bool
-}, propsToIgnore);
+export default withCheckExtraProps(ExampleComponent, ['data', 'ql']);
 ...
 ```
